@@ -1,0 +1,16 @@
+.showcase.active{
+    right:300px;
+  }
+
+
+  from @media
+  .display,
+  .display header{
+    padding: 40px;
+  }
+  .text h2{
+    font-size: 2em;
+  }
+  .text h3{
+    font-size: 3em;
+  }
