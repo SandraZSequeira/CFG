@@ -12,7 +12,7 @@
 
 
 :root{
-    --bg-color: #232023;
+    --bg-color: #282828;
     --text-color:white;
     --main-color:#154f30;
   }
@@ -330,7 +330,7 @@
 /*Sign up */
 
  body{
-  background: #94bb86;
+  background: var(--bg-color);
  }
 
 
