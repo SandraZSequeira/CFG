@@ -290,6 +290,9 @@
       padding-right: 60px;
     }
 
+    .main{
+      font-size: smaller;
+    }
   
   }
 
@@ -352,7 +355,13 @@
 
 .wrapper h1{
   font-size: 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.wrapper h5{
+  padding-bottom: 15px;
+  color:#464647;
+
 }
 
 form input{
@@ -365,9 +374,13 @@ form input{
   background: #c4d9bc;
 }
 
+#message{
+  padding-bottom: 90px;
+}
+
 button{
   font-size: 1rem;
-  margin-top: 1.8rem;
+  margin-top: 0.8rem;
   padding:10px 0;
   border-radius: 20px;
   outline:none;
@@ -458,6 +471,7 @@ button:hover{
 .technique-box h3:hover{
   letter-spacing:1px;
   transform:  translateY(-5px);
+  transition: 0.5s;
 }
 
 
@@ -495,15 +509,16 @@ button:hover{
 
 
 /* About Image */
-#image-section {
-  background-image: url('About.jpg');
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30vh;
+.about img {
+  position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	/*to fill the full space*/
+	object-fit:cover;
+	/*to make video/picture translucent, default is 1*/
+	opacity: 0.3;
 }
 
 
@@ -527,9 +542,3 @@ button:hover{
   margin-bottom: 5px;
 }
 
-.about image{
-  object-fit: cover;
-  
-	
-
-}
