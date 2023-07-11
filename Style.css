@@ -309,7 +309,6 @@
   }
 
   .showcase header{
-    /*takes out of the flexbox alignmetn*/
     position:absolute;
     top:0;
     left:0;
@@ -317,9 +316,7 @@
     padding:40px 100px;
     z-index: 1000;
     display: flex;
-    /*to align vertically*/
     align-items: center;
-    /*align horizontaly*/
     justify-content: space-between;
   }
 
@@ -435,8 +432,8 @@ button:hover{
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
-  flex: 0 0 calc(33.33% - 40px);
-  max-width: calc(33.33% - 40px);
+  flex: 0 0 calc(50% - 40px); /* Updated: 2 boxes per row */
+  max-width: calc(50% - 40px); /* Updated: 2 boxes per row */
 }
 
 .technique-image {
@@ -462,6 +459,21 @@ button:hover{
   letter-spacing:1px;
   transform:  translateY(-5px);
   transition: 0.5s;
+}
+
+/* Responsive Styles for Techniques page */
+@media (max-width: 767px) {
+  .technique-box {
+    flex: 0 0 calc(100% - 40px); 
+    max-width: calc(100% - 40px); 
+  }
+}
+
+@media (min-width: 992px) {
+  .technique-box {
+    flex: 0 0 calc(33.33% - 40px); 
+    max-width: calc(33.33% - 40px); 
+  }
 }
 
 
@@ -517,7 +529,7 @@ button:hover{
 
 .benefits-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .box {
@@ -551,5 +563,4 @@ button:hover{
 .box h2 {
   margin-top: 0;
 }
-
 
